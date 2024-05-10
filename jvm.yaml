@@ -4,6 +4,8 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: "springboot3"
 
+loggingMode: stdout-json
+
 ingress:
   enabled: true
   hosts:
