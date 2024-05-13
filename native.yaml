@@ -6,6 +6,8 @@ image:
 
 loggingMode: stdout-json
 
+replicaCount: 2
+
 ingress:
   enabled: true
   hosts:
