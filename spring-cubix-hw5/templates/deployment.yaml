@@ -74,6 +74,12 @@ spec:
               secretKeyRef:
                 name: hw6secret
                 key: apikey
+          - name: OTEL_SERVICE_NAME
+            value: {{ include "spring-cubix-hw5.fullname" . }}
+          - name: OTEL_EXPORTER_OTLP_ENDPOINT
+            value: http://tempo.tools:4317
+          - name: OTEL_METRICS_EXPORTER
+            value: none
           ports:
             - name: http
               containerPort: 8080
